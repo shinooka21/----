@@ -1,0 +1,42 @@
+/* css_6.html */
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    height: 150px; /* 任意の高さを指定 */
+    width: 25%; /* 任意の横幅を指定 */
+    margin: auto; /* 中央寄せ */
+}
+
+#contents {
+    background-color: rgb(255, 174, 0);
+    flex: 70;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+}
+
+#sub {
+    background-color: green;
+    flex: 30;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color:white;
+}
+
+#contents,
+#sub {
+    box-sizing: border-box;
+}
+
+/* contentsとsubの表示を入れ替えるためのコード */
+#container {
+    flex-direction: row-reverse;
+}
+

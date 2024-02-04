@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 2px;
+    background-color: hsl(219, 92%, 66%);
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    display: block;
+    color:white;
+}
+
+nav li:hover {
+    background-color: rgb(244, 107, 130); /* ホバー時の背景色をピンクに設定 */
+}
